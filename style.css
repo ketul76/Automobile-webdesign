@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.header1{
+  display: flex;
+  background-color: tomato;
+  color: #fff;
+  justify-content: space-between;
+}
+.icon i{
+  padding: 20px;
+  font-size: 24px;
+}
+.info{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.bar i{
+  display: none;
+  padding: 20px;
+  font-size: 24px;
+}
+.header2{
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 1%;
+}
+.logo img{
+  width: 50%;
+}
+.search{
+  display: flex;
+  gap: 35px;
+  padding: 7px;
+}
+.search i{
+  padding-left: 100px;
+}
+.search h3:nth-child(2){
+  border-radius: 2px;
+  background-color: #f0f2f3;
+}
+.cart{
+  display: flex;
+  gap: 15px;
+  padding: 7px;
+}
+.cart i{
+  font-size: 25px;
+}
+.cart #search{
+  display: none;
+}
+.header3{
+  display: flex;
+  justify-content: space-between;
+  background-color: tomato;
+  padding: 1%;
+  color: white;
+}
+.header3 ul{
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  padding: 7px;
+}
+.header3 .sidebar{
+  font-size: 25px;
+}
+.homepage span{
+  color: red;
+}
+.flex{
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.homepagetexts{
+  padding: 25px;
+  line-height: 1.4;
+}
+.homepagetexts h1{
+  font-size: 3rem;
+}
+.homepagetexts p{
+  font-size: 1.2rem;
+}
+.img{
+  width: 90%;
+  /* height: 50vh; */
+  background-image: url(images/video-img.jpg);
+  background-size: 100% 100%;
+  margin: 0 auto;
+  color: red;
+  position: absolute;
+  border-radius: 10px;
+  top: -10px;
+  left: 20px;
+}
+.text{
+  padding: 10% 15px;
+}
+.section1{
+  background-color: tomato;
+  position: relative;
+}
+.parts{
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+.parts img{
+  width: 65px;
+}
+.part1,.part2,.part3,.part4{
+  height: 100px;
+  width: 125px;
+  background-color: white;
+  border: 1px solid gray;
+}
+.two,.one 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.others{
+  display: flex;
+  padding: 5%;
+  gap: 60px;
+}
+.parttext1{
+  padding: 45px;
+}
+.partstext h2{
+  margin-bottom: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 570px) {
+  .icon ,.info {
+    display: none;
+  }
+  .bar i{
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width:670px) {
+  .header3 ul{
+    display: none;
+  }  
+}
+
+
+@media screen and (max-width: 1160px) {
+  .search-symbol{
+    display: block;
+  }
+  .search{
+    display: none;
+  }
+  .cart h3{
+    display: none;
+  }
+  .cart i{
+    font-size: 1rem;
+  }
+  .cart #search{
+    display: block;
+  }
+  .flex{
+    justify-content: center;
+  }
+  .carimage{
+    width: 100%;
+  }
+  .homepagetexts{
+    width: 100%;
+  }
+  .others{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .parts{
+    width: 100%;
+    justify-content: center;
+  }
+  .partstext{
+    width: 100%;
+    margin: 0;
+    padding: 10px; 
+    text-align: center;
+  }
+  .parttext1{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+
+@media screen and (min-width:300px) and (max-width:900px) {
+  header{
+    width: 100%;
+  }
+  .flex{
+    width: 100%;
+    justify-content: center;
+  }
+  .carimage img{
+    width: 100%;
+  }
+  .homepagetexts{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .homepagetexts h1{
+    font-size: 1.8rem;
+  }
+}
